@@ -1,0 +1,59 @@
+---
+title: "Data Types and Structures"
+author: "Aidan O"
+date: "2022-08-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Data Types and Structures
+
+Lots of intricacies of data types and structures.
+I finally tuned in for it all when we got to factors. 
+Something about attributes, the major use of attributes in R.
+
+Keep in mind, if you leave data in, and it has any charecter data, or perhaps R has misinterprested you data as charecters
+Ensure that the charecters are not inadvertently converted to factors.
+
+## Data Frames
+The most famous piece of built in data, mt cars.
+
+```{r summary(mtcars)}
+```
+
+Offers you sample data information about cars.
+Data about their mpg, disp, horsepower, weight, and many more.
+
+Data Frames are best considered lists of lists, notably they can contain heterogeneous data, chars and floats for example.
+
+```{r is.data.frame(mtcars)}
+```
+
+### How do we view just parts of our data.frame
+ 
+```{r mtcars[,2]}
+```
+ Shows us just the second column of mtcars, without the header.
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
